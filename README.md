@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Diabetes Classification Project
 
 ## Problem Statement
@@ -57,3 +58,7 @@ Run the Python script:
 python diabetes_classification.py
 
 Plots for Confusion Matrix and Feature Importance will appear during execution.
+=======
+# Diabetes_Classification_Project
+Diabetes Classification Project using Random Forest. Predicts whether a person has diabetes based on medical measurements. Includes dataset analysis, model training, evaluation, and feature importance visualization.
+>>>>>>> 28daade7a34d94dee3bf936ca9bb0a0660ab151d
