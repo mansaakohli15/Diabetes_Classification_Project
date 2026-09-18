@@ -134,16 +134,6 @@ python diabetes_classification.py
 ```
 *The script will load the dataset, print diagnostic outputs to the console, and update the figures in `figures/`.*
 
----
-
-## 🎯 Interview Quick-Summary (60-Second Explanation)
-
-- **Problem:** Binary diabetes classification on 768 patient records with 8 clinical features.
-- **Baseline Observation:** A Random Forest (100 estimators) achieved 72% accuracy but had a 0.79 vs 0.61 precision gap between non-diabetic and diabetic classes.
-- **Diagnostic Finding:** Traced the precision gap to class imbalance (65:35 ratio) and biologically impossible missing data (e.g. 48.7% missing insulin, 29.6% skin thickness recorded as zeros). Feature importance confirmed Glucose, BMI, and Age as the dominant predictors.
-- **Solution & Result:** Built a clean pipeline with median imputation, balanced class weights, and tree depth regularization—boosting diabetic sensitivity/recall from 62% to 76% and increasing ROC-AUC from 0.812 to 0.837.
-
----
-
 ## 📜 License
 This project is open-source under the [MIT License](LICENSE).
+
